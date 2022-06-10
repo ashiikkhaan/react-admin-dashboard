@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.f6e72a19.css","mappings":"AAAA,MACI,sBACA,aACI","sources":["pages/Home/Home.scss"],"sourcesContent":[".home {\r\n    background-color: rebeccapurple;\r\n    .title {\r\n        color: white;\r\n    }\r\n}"],"names":[],"sourceRoot":""}
