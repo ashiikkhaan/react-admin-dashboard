@@ -1,6 +1,6 @@
 # Getting Started with Create React App and SASS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and I have used [SASS](https://sass-lang.com)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and I have used [SASS](https://sass-lang.com) for styling.
 
 ## Description and Instruction of this project
 
@@ -16,16 +16,30 @@ In this project I have used [SASS](https://sass-lang.com) for styling.
 
 ### Deploy React App on Github Pages
 
+It was an important part. I didn't know about React App Deployment on Github Pages. Now, I can deploy. For this I have just followed the instructions from [this documentation](https://create-react-app.dev/docs/deployment). The steps are given below: 
+ step-1: open package.json file and add this: 
+ 		"homepage": "https://myusername.github.io/my-app",    
+ step-2: install github pages form your terminal: 
+         ### `npm install -save gh-pages`      
+ step-3: add the following scripts in- scripts field in- package.json:
+		    "predeploy": "npm run build", 
+		    "deploy": "gh-pages -d build",      
+ step-4: push all changes to git: 
+ 		 git add
+ 		 git commit -m "your commit"
+         git push      
+ step-5: Now final command: 
+         npm run deploy 
 
-### `npm install -save gh-pages`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+
+
+
+
 
 ### `npm run eject`
 
