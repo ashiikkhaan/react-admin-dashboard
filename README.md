@@ -17,13 +17,13 @@ In this project I have used [SASS](https://sass-lang.com) for styling.
 ### Deploy React App on Github Pages
 
 It was an important part. I didn't know about React App Deployment on Github Pages. Now, I can deploy. For this I have just followed the instructions from [this documentation](https://create-react-app.dev/docs/deployment). The steps are given below: 
- step-1: open package.json file and add this: 
- 		"homepage": "https://myusername.github.io/my-app",    
- step-2: install github pages form your terminal: 
-         ### `npm install -save gh-pages`      
- step-3: add the following scripts in- scripts field in- package.json:
-		    "predeploy": "npm run build", 
-		    "deploy": "gh-pages -d build",      
+ ### Step-1: open package.json file and add this: 
+            `"homepage": "https://myusername.github.io/my-app",`
+ ### Step-2: install github pages form your terminal: 
+            `npm install -save gh-pages`      
+ ### Step-3: add the following scripts in- scripts field in- package.json:
+		    `"predeploy": "npm run build", 
+		     "deploy": "gh-pages -d build",`   
  step-4: push all changes to git: 
  		 git add
  		 git commit -m "your commit"
