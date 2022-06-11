@@ -10,12 +10,12 @@ const Home = () => {
             <Sidebar></Sidebar>
             <div className="homeContainer">
                 <Navbar></Navbar>
-                {/* now home page */}
+                {/* now home page  and here i did a mistake: Widgets = Widget*/}
                 <div className="widgets">
-                    <Widgets></Widgets>
-                    <Widgets></Widgets>
-                    <Widgets></Widgets>
-                    <Widgets></Widgets>
+                    <Widgets type="user"></Widgets>
+                    <Widgets type="order"></Widgets>
+                    <Widgets type="earning"></Widgets>
+                    <Widgets type="balance"></Widgets>
                 </div>
             </div>
         </div>
