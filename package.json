@@ -15,9 +15,11 @@
     "install": "^0.13.0",
     "npm": "^8.12.1",
     "react": "^18.1.0",
+    "react-circular-progressbar": "^2.0.4",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "recharts": "^2.1.10",
     "sass": "^1.52.3",
     "web-vitals": "^2.1.4"
   },
