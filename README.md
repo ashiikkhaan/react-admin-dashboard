@@ -18,18 +18,18 @@ In this project I have used [SASS](https://sass-lang.com) for styling.
 
 It was an important part. I didn't know about React App Deployment on Github Pages. Now, I can deploy. For this I have just followed the instructions from [this documentation](https://create-react-app.dev/docs/deployment). The steps are given below: 
  ### Step-1: open package.json file and add this: 
-            `"homepage": "https://myusername.github.io/my-app",`
+             "homepage": "https://myusername.github.io/my-app",
  ### Step-2: install github pages form your terminal: 
-            `npm install -save gh-pages`      
+             npm install -save gh-pages      
  ### Step-3: add the following scripts in- scripts field in- package.json:
-		    `"predeploy": "npm run build", 
-		     "deploy": "gh-pages -d build",`   
- step-4: push all changes to git: 
- 		 git add
- 		 git commit -m "your commit"
-         git push      
- step-5: Now final command: 
-         npm run deploy 
+		     "predeploy": "npm run build", 
+		     "deploy": "gh-pages -d build",   
+ ### Step-4: push all changes to git: 
+ 		`   git add
+ 		    git commit -m "your commit"
+            git push `
+ ### Step-5: Now final command: 
+            `npm run deploy `
 
 
 
