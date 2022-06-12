@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Featured.scss";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { CircularProgressbar } from 'react-circular-progressbar';
+import { CircularProgressbar, buildStyles} from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
@@ -19,6 +19,11 @@ const Featured = () => {
                     value={70} 
                     text={"70%"}
                     strokeWidth={5}
+                    styles={buildStyles({
+                        textColor: "gray",
+                        pathColor: "#7551f8cf",
+                        trailColor: "rgba(218, 165, 32, 0.474)"
+                      })}
                     ></CircularProgressbar>
                 </div>
                 <p className="title">Total sales made today</p>

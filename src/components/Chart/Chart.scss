@@ -5,6 +5,9 @@
     padding: 10px;
     color: gray;
 
+    // for scrolling
+    z-index: -1;
+
     .title {
         margin-bottom: 15px;
     }

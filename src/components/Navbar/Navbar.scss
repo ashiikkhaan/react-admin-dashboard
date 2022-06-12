@@ -6,6 +6,10 @@
     font-size: 14px;
     color: #555;
 
+    // for making navbar sticky
+    background-color: white;
+    position: sticky;
+    top: 0px;
     .wrapper {
         padding: 20px;
         display: flex;
