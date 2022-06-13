@@ -14,7 +14,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({darkMode, setDarkMode}) => {
     return (
         <div className='sidebar'>
             <div className="top">
@@ -89,8 +89,8 @@ const Sidebar = () => {
             <div className="bottom">
                 <p className="title">THEME</p>
                 <div className='options'>
-                <div className="colorOption"></div>
-                <div className="colorOption"></div>
+                <div className="colorOption" onClick={()=> setDarkMode(darkMode === "dark" ? "app" : "app")}></div>
+                <div className="colorOption" onClick={()=> setDarkMode(darkMode === "app" ? "dark" : "dark")}></div>
                 </div>
             </div>
         </div>

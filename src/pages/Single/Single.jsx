@@ -6,12 +6,12 @@ import Chart from "../../components/Chart/Chart";
 import List from '../../components/List/List';
 
 
-const Single = () => {
+const Single = ({darkMode, setDarkMode}) => {
     return (
         <div className='single'>
-            <Sidebar></Sidebar>
+            <Sidebar darkMode={darkMode} setDarkMode={setDarkMode}></Sidebar>
             <div className="singleContainer">
-                <Navbar></Navbar>
+                <Navbar darkMode={darkMode} setDarkMode={setDarkMode}></Navbar>
                 <div className="top">
                     <div className="left">
                         <div className="editButton">Edit</div>

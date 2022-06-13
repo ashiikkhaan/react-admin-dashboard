@@ -4,16 +4,16 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Navbar from "../../components/Navbar/Navbar";
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
 
-const New = ({inputs, title}) => {
+const New = ({inputs, title, darkMode, setDarkMode}) => {
 
     const [file, setFile] = useState("");
     console.log(file)
     
     return (
         <div className='new'>
-            <Sidebar></Sidebar>
+            <Sidebar darkMode={darkMode} setDarkMode={setDarkMode}></Sidebar>
             <div className='newContainer'>
-                <Navbar></Navbar>
+                <Navbar darkMode={darkMode} setDarkMode={setDarkMode}></Navbar>
                 <div className="top">
                     <h1>{title}</h1>
                 </div>

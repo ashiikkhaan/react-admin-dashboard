@@ -8,7 +8,7 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 
-const Navbar = () => {
+const Navbar = ({darkMode,setDarkMode}) => {
     return (
         <div className='navbar'>
             <div className="wrapper">
@@ -21,7 +21,7 @@ const Navbar = () => {
                         <LanguageOutlinedIcon className='icon'></LanguageOutlinedIcon>
                         English
                     </div>
-                    <div className='item'>
+                    <div className='item' style={{cursor: "pointer"}} onClick={()=> setDarkMode(darkMode === "app" ? "dark" : "app")}>
                         <DarkModeOutlinedIcon className='icon'></DarkModeOutlinedIcon>
                     </div>
                     <div className='item'>

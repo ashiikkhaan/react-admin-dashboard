@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Login.scss";
 
-const Login = () => {
+const Login = ({darkMode, setDarkMode}) => {
     return (
         <div>
             <h1>This is logiin</h1>

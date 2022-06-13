@@ -1,4 +1,4 @@
-.app.dark {
+.dark {
     background-color: #222;
     color: rgb(156, 156, 156);
 
@@ -48,5 +48,24 @@
                 }
             }
         }
+    }
+
+    .dataTable {
+        .dataGrid {
+            color: gray;
+            border: none;
+
+            .viewButton , .deleteButton, .cellWithStatus {
+                color: gray;
+                border: none;
+            }
+            .viewButton:hover {
+                background-color: #333;
+            }
+        }
+
+    }
+    input {
+        background-color: transparent;
     }
 }

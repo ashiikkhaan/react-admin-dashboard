@@ -8,12 +8,12 @@ import Chart from '../../components/Chart/Chart';
 import List from '../../components/List/List';
 
 
-const Home = () => {
+const Home = ({darkMode, setDarkMode}) => {
     return (
         <div className='home'>
-            <Sidebar></Sidebar>
+            <Sidebar darkMode={darkMode} setDarkMode={setDarkMode}></Sidebar>
             <div className="homeContainer">
-                <Navbar></Navbar>
+                <Navbar darkMode={darkMode} setDarkMode={setDarkMode}></Navbar>
                 {/* now home page  and here i did a mistake: Widgets = Widget*/}
                 <div className="widgets">
                     <Widgets type="user"></Widgets>
